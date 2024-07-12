@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-identity">
+      <h1>Admin Dashboard</h1>
+    </div>  
+  </header>
+  
+
+  <h2>Create Employee</h2>
+  <form id="employee-form">
+    <label for="employee-name">Name</label>
+    <input type="text" id="employee-name" required>
+    <label for="employee-position">Position</label>
+    <input type="text" id="employee-position" required>
+    <label for="employee-department">Department</label>
+    <input type="text" id="employee-department" required>
+    <button type="submit">Create Employee</button>
+  </form>
+
+  <h2>Employees</h2>
+  <div class="employee-list" id="employee-list"></div>
+
+  <h2>Create Task</h2>
+  <form id="task-form">
+    <label for="task-title">Title</label>
+    <input type="text" id="task-title" required>
+    <label for="task-description">Description</label>
+    <textarea id="task-description" required></textarea>
+    <label for="task-assignedTo">Assign to Employee</label>
+    <select id="task-assignedTo" required></select>
+    <label for="task-status">Status</label>
+    <select id="task-status" required>
+      <option value="Pending">Pending</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Completed">Completed</option>
+    </select>
+    <button type="submit">Create Task</button>
+  </form>
+
+  <h2>Tasks</h2>
+  <div class="task-list" id="task-list"></div>
+
+</body>
+</html>
